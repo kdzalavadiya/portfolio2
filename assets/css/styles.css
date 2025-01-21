@@ -312,33 +312,48 @@ a:hover {
 
 /* Contact Section */
 .contact {
+    text-align: center;
     padding: 4rem 2rem;
-    background-color: var(--secondary-color);
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--accent-color);
 }
 
 .social-links {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .social-card {
-    background-color: var(--primary-color);
-    padding: 1.5rem;
-    border-radius: 10px;
-    transition: background-color var(--transition-speed);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.social-card:hover {
-    background-color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    width: 200px; /* Ensures all buttons have the same width */
 }
 
 .social-card i {
     font-size: 1.5rem;
-    margin-right: 0.5rem;
 }
+
+.social-card:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
 
 /* Footer */
 .footer {
